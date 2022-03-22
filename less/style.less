@@ -1,0 +1,55 @@
+@background_color: #f3d699;
+@primary-text: #999;
+
+.text-color(@color) when (lightness(@color) >= 50%) {
+  color: black;
+}
+
+.text-color(@color) when (lightness(@color) < 50%) {
+  color: white;
+}
+
+body {
+  background: @background_color;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: 0;
+  .border-radius(10px)
+}
+
+.primary-text {
+  color: @primary-text;
+}
+
+.primary-btn:extend(.btn) {
+  color: @primary-text;
+}
+
+h1 {
+  .bordered
+}
+
+ul#menu {
+  list-style: none;
+  background-color:lighten(@background_color, 20%);
+  li {
+    padding: 10px 0;
+    a {
+      .text-color(@background_color);
+      &:hover {
+        color: @background_color;
+      }
+    }
+  }
+}
+
+.border-radius(@radius) {
+  border-radius: @radius;
+}
+
+.bordered {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px dotted #ccc;
+}

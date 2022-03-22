@@ -1,0 +1,36 @@
+body {
+  background: #f3d699;
+}
+.btn,
+.primary-btn {
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 10px;
+}
+.primary-text {
+  color: #999;
+}
+.primary-btn {
+  color: #999;
+}
+h1 {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px dotted #ccc;
+}
+ul#menu {
+  list-style: none;
+  background-color: #fefbf4;
+}
+ul#menu li {
+  padding: 10px 0;
+}
+ul#menu li a {
+  color: black;
+}
+ul#menu li a:hover {
+  color: #f3d699;
+}
+.bordered {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px dotted #ccc;
+}
